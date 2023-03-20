@@ -6,6 +6,7 @@
   font-family: 'Kosugi Maru', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
   font-family: 'Poppins', sans-serif;
+  user-select: none;
 }
 
 :root {
@@ -53,8 +54,8 @@ ul {
   display: block;
   padding: 0 30px;
   opacity: 1;
-  position:fixed;
-  left: 270px;
+  /* position:fixed; */
+  /* left: 270px; */
   top: 0;
   right: 0;
   bottom: 0;
@@ -64,27 +65,27 @@ ul {
   transition: all 0.3s ease;
 }
 
-.section.back-section {
+/* .section.back-section {
   z-index: 3;
-}
+} */
 
 .section.active {
   z-index: 4;
   opacity: 1;
-  animation: slideSection 1s ease;
+  /* animation: slideSection 1s ease; */
 }
 
-@keyframes slideSection {
+/* @keyframes slideSection {
   0% { transform: translateX(100%);}
   100% { transform: translateX(0);}
-}
+} */
 
 .hidden {
   display: none !important;
 }
 
 .main-container {
-  padding-left: 270px;
+  /* padding-left: 270px; */
 }
 
 .padd-15 {
@@ -168,19 +169,7 @@ ul {
 
 /* aside */
 .aside {
-  width: 270px;
-  background: var(--bg-black-100);
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 30px;
-  height: 100vh;
-  border-right: 1px solid var(--bg-black-50);
-  display: flex;
-  justify-content: center;
-  align-items: center ;
-  z-index: 10;
-  transition:  all 0.3s ease;
+  display: none;
 }
 
 /* .aside .logo {
@@ -308,6 +297,20 @@ ul {
   margin-right: 15px;
 }
 
+/* topNav */
+.topNav {
+  position: fixed;
+  height: 80px;
+}
+
+.topNav .nav {
+  position: relative;
+}
+
+.topNav .nav li {
+  float:left;
+}
+
 /* Home */
 .home {
   min-height: 100vh;
@@ -334,7 +337,7 @@ h3.hello span {
 }
 
 h3.my-profession {
-  font-size: 30px;
+  font-size: 60px;
   margin: 15px 0;
 }
 
@@ -756,8 +759,23 @@ h3.my-profession {
   .section .container {
     padding-top: 70px;
   }
+  .topNav {
+    display: none;
+  }
   .aside {
+    width: 270px; 
+    background: var(--bg-black-100);
+    position: fixed; 
+    top: 0;
     left: -270px;
+    padding: 30px;
+    height: 100vh; 
+    border-right: 1px solid var(--bg-black-50);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    z-index: 10;
+    transition:  all 0.3s ease;
   }
   .aside.open {
     left:0;

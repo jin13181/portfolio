@@ -1,9 +1,8 @@
 /* ===== typing animation ===== */
 let typed = new Typed(".typing", {
-  strings: ["", "Product Manager", "Designer", "Programmer", "Publisher", "Marketer "
-],
-  typeSpeed: 100,
-  BackSpeed: 60,
+  strings: ["","Designer", "Programmer", "Publisher"],
+  typeSpeed: 200,
+  BackSpeed: 100,
   loop: true
 })
 
@@ -40,7 +39,7 @@ const nav = document.querySelector(".nav"),
 
 function removeBackSection() {
 for (let i = 0; i < totalSection; i++) {
-  allSection[i].classList.remove("back-section");
+  // allSection[i].classList.remove("back-section");
   }
 }
 
