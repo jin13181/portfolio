@@ -5,11 +5,10 @@
 label {
   display: block;
   position: absolute;
-  top: 50%;
-  right: 0;
-  left: 0;
-  width: 116px;
-  height: 40px;
+  top: 80px;
+  left: 136px;
+  width: 60px;
+  height: 30px;
   margin: 0 auto;
   background-color: #03a9f4;
   border-radius: 56px;
@@ -20,7 +19,7 @@ label {
 }
 #star {
   position: absolute;
-  top: 13px;
+  top: 0px;
   left: 13px;
   width: 30px;
   height: 30px;
@@ -33,7 +32,7 @@ label {
 }
 .star {
   top: 0;
-  left: -7px;
+  left: -70px;
   font-size: 40px;
   line-height: 20px;
   color: #fff;
