@@ -1,10 +1,10 @@
 /* ===== typing animation ===== */
-let typed = new Typed(".typing", {
-  strings: ["","Designer", "Programmer", "Publisher"],
-  typeSpeed: 200,
-  BackSpeed: 100,
-  loop: true
-})
+// let typed = new Typed(".typing", {
+//   strings: ["","Designer", "Programmer", "Publisher"],
+//   typeSpeed: 200,
+//   BackSpeed: 100,
+//   loop: true
+// })
 
 /* ===== Aside ===== */
 const nav = document.querySelector(".nav"),

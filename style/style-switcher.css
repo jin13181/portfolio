@@ -113,12 +113,13 @@ label {
   height: 40px;
   width: 40px;
   text-align: center;
+  line-height: 40px;
   font-size: 20px;
   /* background: var(--bg-black-100); */
-  background-color: black;
-  color: var(--text-black-900);
+  /* background-color: rgb(205, 232, 255); */
+  color: #f0d2ac;
   right: 100%;
-  border: 1px solid var(--bg-black-50);
+  /* border: 1px solid var(--bg-black-50); */
   margin-right: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -171,7 +172,7 @@ label {
 } */
 
 .style-switcher .color-4 {
-  background: #1854b4;
+  background: #f0d2ac;
 }
 
 /* .style-switcher .color-5 {

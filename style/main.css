@@ -1,0 +1,11 @@
+.main {
+    background-color: #002c39;
+}
+
+.main .container {
+    position: relative;
+}
+
+.main .container .title {
+      color: #f0d2ac;
+}
