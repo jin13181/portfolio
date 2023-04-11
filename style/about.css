@@ -1,6 +1,7 @@
 /* About */
 .about .about-content {
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; */
+    display: flex;
     max-width: 100%;
   }
   
@@ -17,7 +18,7 @@
   }
   
   .about .about-content .about-text h3 span {
-    color: var(--skin-color);
+    color: #002c39;;
   }
   
   .about .about-content .about-text p {
@@ -109,7 +110,7 @@
     top: 0;
     height: 100%;
     border-radius: 4px;
-    background-color: var(--skin-color);
+    background-color: #002c39;;
   }
   
   .about .about-content .skills .skill-item .skill-percent {
@@ -123,9 +124,9 @@
   
   .about .about-content .education,
   .about .about-content .experience {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-top: 30px;
+    /* flex: 0 0 50%; */
+    /* max-width: 50%; */
+    /* margin-top: 30px; */
   }
   .about .about-content h3.title {
     font-size: 24px;
@@ -165,17 +166,17 @@
     height: 100%;
     left: 7px;
     top: 0;
-    background-color: var(--skin-color);
+    background-color: #002c39;
   }
   
   .about .about-content .timeline .circle-dot {
     position: absolute;
-    left: 0;
+    left: 2.5px;
     top: 0;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
-    background-color: var(--skin-color);
+    background-color: #002c39;;
   }
   
   .about .about-content .timeline .timeline-date {
@@ -203,7 +204,10 @@
     text-align:   justify;
     color: var(--text-black-700);
   }
-
+  .about .left {
+    display: flex;
+    flex-direction: column;
+  }
   @media (max-width: 1199px) {
     .about .about-content .personal-info .info-item p span {
       display: block;
@@ -217,7 +221,7 @@
     .about .about-content .education,
     .about .about-content .skills,
     .about .about-content .personal-info {
-      flex: 0 0 100%;
+      /* flex: 0 0 100%; */
       max-width: 100%;
     }
   }

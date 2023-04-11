@@ -15,8 +15,13 @@
   --bg-black-100: #fdf9ff; */
   --bg-black-50: #e8dfec;
   --text-black-900: #002c39;
-  --text-black-700: #504e70;
+  #203929
+  --text-black-700: #002c39;
+
+  /* --text-black-700: #e36414; */
 }
+
+
 
 body.dark {
   --bg-black-900: #f0d2ac;
@@ -30,6 +35,8 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+  transition: background-color 0.3s ease-out 0s, color 0.3s ease-out 0s;
+  /* --base:rgba(32,57,38); *//* --bg:rgba(205,196,181); */
 }
 
 * { 
@@ -112,7 +119,7 @@ ul {
 }
 
 .section-title h2 {
-  font-size: 40px;
+  font-size: 35px;
   color: var(--text-black-900);
   font-weight: 700;
   position:relative;
@@ -122,7 +129,7 @@ ul {
   content: '';
   height: 4px;
   width: 50px;
-  background-color: var(--skin-color);
+  background-color: #002c39;
   position: absolute;
   top: 100%;
   left: 0;
@@ -132,7 +139,7 @@ ul {
   content: '';
   height: 4px;
   width: 25px;
-  background-color: var(--skin-color);
+  background-color: #002c39;
   position: absolute;
   top: 100%;
   left: 0;
@@ -156,7 +163,7 @@ ul {
   display: inline-block;
   white-space: nowrap;
   border: none;  
-  background: var(--skin-color);
+  background: #002c39;
   transition: all 0.3s ease;
 }
 

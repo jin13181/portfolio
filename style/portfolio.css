@@ -1,4 +1,7 @@
 /* ===== Portfolio Section ===== */
+.portfolio .container {
+  color :#002c39;
+}
 
 .portfolio__container {
     position: relative;
@@ -6,9 +9,14 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    color: var(--text-black-700);
+    /* color: var(--text-black-700); */
+    color: #002c39;
     margin-top: 60px;
     /* overflow: hidden; */
+  }
+  .portfolioWrap {
+    display: flex;
+    gap: 30px;
   }
   
   .portfolio-heading {
@@ -17,7 +25,7 @@
   }
   
   .portfolio__filters {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -34,7 +42,7 @@
   }
   
   .portfolio__card {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -62,6 +70,7 @@
   
   .portfolio__subtitle {
     font-size: 0.75rem;
+    color: #e36414;
   }
   
   .portfolio__title {
@@ -72,7 +81,7 @@
   }
   
   .portfolio__button {
-    color: var(--skin-color);
+    color: #002c39;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -96,8 +105,8 @@
   
   /* Active Item Portfolio */
   .active-portfolio {
-    background-color: var(--skin-color);
-    color: var(--bg-black-900);
+    background-color: #002c39;
+    color: #fff;
   }
   
   /* Portfolio Popup */
@@ -126,7 +135,7 @@
   
   .portfolio__popup-inner { 
     position: relative;
-    background-color: var(--bg-black-100);
+    background-color: #fff;
     border: 1px solid var(--bg-black-50);
     width: 580px;
     border-radius: .5rem;
@@ -142,15 +151,15 @@
     column-gap: 3rem;
   }
   
-  /* .portfolio__popup-close { 
+  .portfolio__popup-close { 
     position: absolute;
     top: 30px;
     right: 30px;
     font-size: 1.5rem;
-    color: var(--skin-color);
+    color: #002c39;
     cursor: pointer;
     background: var(--bg-black-100);
-  } */
+  }
   
   .portfolio__popup-close {
     height: 40px;
@@ -183,7 +192,7 @@
     content: '';
     height: 2px;
     width: 18px;
-    background: var(--skin-color);
+    background: #002c39;
     position: absolute;
     transform: rotate(45deg);
     /* top: 50%;
@@ -194,7 +203,7 @@
     content: '';
     height: 2px;
     width: 18px;
-    background: var(--skin-color);
+    background: #002c39;
     position: absolute;
     transform: rotate(-45deg);
     /* top: 50%;
@@ -242,12 +251,21 @@
   
   .details__info li a {
     text-transform: lowercase;
-    color: var(--skin-color);
+    color: #002c39;
   }
   
   @media (max-width: 1199px) {
+    .portfolio__card {
+      display: flex;
+    }
+    .portfolio__filters {
+      display: flex;
+    }
     .portfolio__popup {
       left:0;
+    }
+    .portfolioPCver {
+      display: none;
     }
   }
   
