@@ -1,4 +1,13 @@
 /* ===== Portfolio Section ===== */
+.portfolio {
+  background: #cdc4b5ad
+  url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
+  repeat 0 0;
+  background-repeat: repeat;
+  animation: 1000ms infinite noise;
+  opacity: 1;
+}
+
 .portfolio .container {
   color :#002c39;
 }
@@ -17,11 +26,6 @@
   .portfolioWrap {
     display: flex;
     gap: 30px;
-  }
-  
-  .portfolio-heading {
-    flex: 0 0 100%;
-    max-width: 100%;
   }
   
   .portfolio__filters {
@@ -51,7 +55,7 @@
     background-color: var(--bg-black-100);
     padding: 1.25rem;
     border-radius: 0.5rem;
-    border: var(--bg-black-50);
+    border: 1px solid rgba(48, 46, 77, 0.15);
     overflow: hidden;
     /* Transition 적용 불가 - Mixitup */
   }
@@ -65,7 +69,7 @@
     border-radius: 0.5rem;
     margin-bottom: 1em;
     width: 70%;
-    float: right;
+    margin: 30px auto;
   }
   
   .portfolio__subtitle {
@@ -230,6 +234,10 @@
     margin-bottom: 0.5rem
   }
   
+  .portfolioMobile {
+    display: none;
+  }
+
   .details__description {
     font-size: 1rem;
     margin-bottom: 1.5rem
@@ -253,6 +261,10 @@
     text-transform: lowercase;
     color: #002c39;
   }
+
+  .portfolioTxt {
+    margin-top: 30px;
+  }
   
   @media (max-width: 1199px) {
     .portfolio__card {
@@ -266,6 +278,9 @@
     }
     .portfolioPCver {
       display: none;
+    }
+    .portfolioMobile {
+      display: block;
     }
   }
   

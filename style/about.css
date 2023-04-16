@@ -1,7 +1,17 @@
 /* About */
+.about {
+  background-color: #cdc4b5ad;
+  /* background: #cdc4b5ad
+  url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
+  repeat 0 0;
+  background-repeat: repeat;
+  animation: 1000ms infinite noise;
+  opacity: 1; */
+}
 .about .about-content {
     /* flex: 0 0 100%; */
     display: flex;
+    gap: 200px;
     max-width: 100%;
   }
   
@@ -11,7 +21,7 @@
   } 
   
   .about .about-content .about-text h3 {
-    font-size: 24px;
+    font-size: 50px;
     margin-bottom: 15px;
     font-weight: 700;
     color: var(--text-black-900);
@@ -29,7 +39,7 @@
   
   .about .about-content .personal-info {
     flex: 0 0 60%;
-    max-width: 60%;
+    /* max-width: 60%; */
     margin-top: 40px;
   }
   
@@ -65,12 +75,6 @@
     color: var(--text-black-700);
     text-decoration: none;
   }
-  
-  /* .about .about-content .skills {
-    flex: 0 0 40%;
-    max-width: 40%; 
-    margin-top: 40px;
-  } */
 
   .about .skillrow {
     display: flex;
@@ -79,60 +83,21 @@
     
   }
   
-  /* .about .about-content .skills .skill-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  
-  .about .about-content .skills .skill-item h5 {
-    line-height: 40px;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--text-black-900);
-    text-transform: capitalize;
-  }
-  
-  .about .about-content .skills .skill-item .progress {
-    background-color: var(--bg-black-50);
-    height: 7px;
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
-  }
-  
-  .about .about-content .skills .skill-item {
-    margin-bottom: 25px;
-  }
-  
-  .about .about-content .skills .skill-item .progress-in {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background-color: #002c39;;
-  }
-  
-  .about .about-content .skills .skill-item .skill-percent {
-    position: absolute;
-    right: 0;
-    color: var(--text-black-900);
-    top: -40px;
-    font-weight: 400;
-    line-height: 40px;
-  } */
-  
+  .about .about-content .skills,
   .about .about-content .education,
   .about .about-content .experience {
-    /* flex: 0 0 50%; */
-    /* max-width: 50%; */
-    /* margin-top: 30px; */
+    display: flex;
   }
+
+  .about .about-content .skills {
+    
+  }
+
   .about .about-content h3.title {
     font-size: 24px;
-    /* margin-bottom: 30px; */
     font-weight: 600;
-    color: var(--text-black-900)
+    color: var(--text-black-900);
+    flex-basis: 150px;
   }
   
   .about .about-content .timeline-box {
@@ -143,7 +108,6 @@
   .about .about-content .timeline {
     background-color: var(--bg-black-100);
     padding: 30px 15px;
-    /* border: 1px solid var(--bg-black-50); */
     border-radius: 10px;
     width: 100%;
     position: relative;
@@ -206,7 +170,9 @@
   }
   .about .left {
     display: flex;
+    flex-basis: 60%;
     flex-direction: column;
+    gap :100px;
   }
   @media (max-width: 1199px) {
     .about .about-content .personal-info .info-item p span {
@@ -215,13 +181,11 @@
     }
   }
   
-  
   @media (max-width: 767px) {
     .about .about-content .experience,
     .about .about-content .education,
     .about .about-content .skills,
     .about .about-content .personal-info {
-      /* flex: 0 0 100%; */
       max-width: 100%;
     }
   }

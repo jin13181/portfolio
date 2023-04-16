@@ -1,57 +1,28 @@
-gsap.registerPlugin(ScrollTrigger);
+function vh(v) {
+    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    return (v * h) / 100;
+  }
 
-const pageContainer = document.querySelector("#sectionPin");
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= 0 && $(this).scrollTop() <= vh(50)) {
 
-/* SMOOTH SCROLL */
-const scroller = new LocomotiveScroll({
-  el: pageContainer,
-  smooth: true
-});
-
-scroller.on("scroll", ScrollTrigger.update);
-
-ScrollTrigger.scrollerProxy(pageContainer, {
-  scrollTop(value) {
-    return arguments.length
-      ? scroller.scrollTo(value, 0, 0)
-      : scroller.scroll.instance.scroll.y;
-  },
-  getBoundingClientRect() {
-    return {
-      left: 0,
-      top: 0,
-      width: window.innerWidth,
-      height: window.innerHeight
-    };
-  },
-  pinType: pageContainer.style.transform ? "transform" : "fixed"
-});
-
-////////////////////////////////////
-////////////////////////////////////
-window.addEventListener("load", function () {
-  let pinBoxes = document.querySelectorAll(".pin-wrap > *");
-  let pinWrap = document.querySelector(".pin-wrap");
-  let pinWrapWidth = pinWrap.offsetWidth;
-  let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-
-  // Pinning and horizontal scrolling
-
-  gsap.to(".pin-wrap", {
-    scrollTrigger: {
-      scroller: pageContainer, //locomotive-scroll
-      scrub: true,
-      trigger: "#sectionPin",
-      pin: true,
-      // anticipatePin: 1,
-      start: "top top",
-      end: pinWrapWidth
-    },
-    x: -horizontalScrollLength,
-    ease: "none"
-  });
-
-  ScrollTrigger.addEventListener("refresh", () => scroller.update()); //locomotive-scroll
-
-  ScrollTrigger.refresh();
+           $(".about").css("background", "#cdc4b5").css("transition", "0.5s");
+           $(".about p, .about h2, .about h3, .about h4, .about h2::before").css("color", "#203929" ).css("transition", "0.5s");
+           $(".section-title h2:before").css("backgroundColor", "#203929" ).css("transition", "0.5s");
+        } 
+       else if ($(this).scrollTop() >= vh(50) && $(this).scrollTop() <= vh(300)) {
+          $(".about").css("background", "#cdc4b5").css("transition", "0.5s");
+          $("p, h2, h3, h4, h2::before").css("color", "#203929").css("transition", "0.5s");
+       }
+       else if ($(this).scrollTop() >=vh(300)&& $(this).scrollTop() <= vh(350)) {
+          $(".section").css("background", "#203929").css("transition", "0.5s");
+       }
+       else if ($(this).scrollTop() >= 1400 && $(this).scrollTop() <= 1900) {
+          $(".section").css("background", "#203929").css("transition", "0.5s");
+       }
+       else if ($(this).scrollTop() >= 2000 && $(this).scrollTop() <= 2500) {
+          $(".section").css("background", "#cdc4b5").css("transition", "0.5s");
+       }
+   });
 });

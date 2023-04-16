@@ -3,10 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@200;300;400;500;600&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@import url(//db.onlinewebfonts.com/c/22b4c73e6141de7c9937f42cb58bdb4b?family=GT+America+Expanded+Bold);
 * {
   font-family: 'Kosugi Maru', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
   font-family: 'Poppins', sans-serif;
+  /* font-family: 'GT America Expanded Bold', sans-serif; */
   user-select: none;
 }
 
@@ -14,8 +17,7 @@
   /* --bg-black-900: #f2f2fc;
   --bg-black-100: #fdf9ff; */
   --bg-black-50: #e8dfec;
-  --text-black-900: #002c39;
-  #203929
+  --text-black-900: #203929;
   --text-black-700: #002c39;
 
   /* --text-black-700: #e36414; */
@@ -35,9 +37,8 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-family: 'Poppins', 'Noto Sans KR', sans-serif;
-  transition: background-color 0.3s ease-out 0s, color 0.3s ease-out 0s;
-  /* --base:rgba(32,57,38); *//* --bg:rgba(205,196,181); */
 }
+
 
 * { 
   margin: 0;
@@ -55,9 +56,15 @@ body {
 ul {
   list-style-type: none;
 }
-
+p {
+  color: #002c39;
+}
 .section {
-  background: var(--bg-black-900);
+  background: transparent
+  url("../images/noise.png")
+  repeat 0 0;
+  background-repeat: repeat;
+  animation: 1000ms infinite noise;
   min-height: 100vh;
   display: block;
   padding: 0 30px;
@@ -71,25 +78,6 @@ ul {
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.3s ease;
-}
-
-/* .section.back-section {
-  z-index: 3;
-} */
-
-.section.active {
-  z-index: 4;
-  opacity: 1;
-  /* animation: slideSection 1s ease; */
-}
-
-/* @keyframes slideSection {
-  0% { transform: translateX(100%);}
-  100% { transform: translateX(0);}
-} */
-
-.hidden {
-  display: none !important;
 }
 
 .main-container {
@@ -135,17 +123,6 @@ ul {
   left: 0;
 }
 
-/* .section-title h2:after {
-  content: '';
-  height: 4px;
-  width: 25px;
-  background-color: #002c39;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin-top: 8px;
-} */
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -159,11 +136,11 @@ ul {
   font-weight: 500;
   padding: 12px 35px;
   color: white;
-  border-radius: 40px;
+  border-radius: 5px;
   display: inline-block;
   white-space: nowrap;
   border: none;  
-  background: #002c39;
+  background: #203929;
   transition: all 0.3s ease;
 }
 
@@ -171,9 +148,6 @@ ul {
   transform: scale(1.05);
 }
 
-.shadow-dark {
-  /* box-shadow: 0 0 20px rgba(48, 46, 77, 0.15); */
-}
 
 @font-face {
   font-family: "BiCute Round";
@@ -197,6 +171,9 @@ ul {
   font-display: swap
 }
 
+@font-face {font-family: "GT America Expanded Bold"; src: url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.eot"); src: url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.woff") format("woff"), url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.svg#GT America Expanded Bold") format("svg"); }
+
+
 @media (max-width: 1199px) {
   .section .container {
     padding-top: 70px;
@@ -209,4 +186,38 @@ ul {
     left: 270px;
   } */
   
+}
+
+@keyframes noise {
+	0%,
+	100% {
+		background-position: 0 0;
+	}
+	10% {
+		background-position: -5% -10%;
+	}
+	20% {
+		background-position: -15% 5%;
+	}
+	30% {
+		background-position: 7% -25%;
+	}
+	40% {
+		background-position: 20% 25%;
+	}
+	50% {
+		background-position: -25% 10%;
+	}
+	60% {
+		background-position: 15% 5%;
+	}
+	70% {
+		background-position: 0 15%;
+	}
+	80% {
+		background-position: 25% 35%;
+	}
+	90% {
+		background-position: -10% 10%;
+	}
 }

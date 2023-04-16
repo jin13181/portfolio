@@ -1,9 +1,13 @@
 .main {
-    background-color: #002c39;
+  background-color: #203929;
+    /* background: #203929
+	  	url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
+	  	repeat 0 0;
+	  background-repeat: repeat;
+	  animation: 1000ms infinite noise;
+	  pointer-events: none;
+	  opacity: 1; */
     position: relative;
-}
-
-.main .container {
 }
 
 .main .container .title {
@@ -33,7 +37,7 @@
 
 .main a {
     position: absolute;
-    bottom: 20px;
+    bottom: -200px;
     left: 50%;
     z-index: 2;
     display: inline-block;
