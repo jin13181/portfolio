@@ -60,11 +60,11 @@ p {
   color: #002c39;
 }
 .section {
-  background: transparent
+  /* background: transparent
   url("../images/noise.png")
   repeat 0 0;
   background-repeat: repeat;
-  animation: 1000ms infinite noise;
+  animation: 1000ms infinite noise; */
   min-height: 100vh;
   display: block;
   padding: 0 30px;
