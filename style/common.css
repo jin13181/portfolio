@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic:wght@400;700;800&display=swap');
 
-@import url(//db.onlinewebfonts.com/c/22b4c73e6141de7c9937f42cb58bdb4b?family=GT+America+Expanded+Bold);
+/* @import url(//db.onlinewebfonts.com/c/22b4c73e6141de7c9937f42cb58bdb4b?family=GT+America+Expanded+Bold); */
 * {
   font-family: 'Kosugi Maru', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
@@ -58,6 +58,14 @@ ul {
 }
 p {
   color: #002c39;
+}
+section {
+  background: #cdc4b5ad
+  url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
+  repeat 0 0;
+  background-repeat: repeat;
+  animation: 1000ms infinite noise;
+  opacity: 1;
 }
 .section {
   /* background: transparent
