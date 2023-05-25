@@ -53,7 +53,7 @@
   cursor: pointer;
   position: fixed !important;
   top: 20px;
-  left: 300px;
+  /* left: 300px; */
   border-radius: 5px;
   background: var(--bg-black-100);
   display: none;
@@ -117,13 +117,13 @@
   font-weight: 600;
   display: block;
   /* border-bottom: 1px solid var(--bg-black-50); */
-  color: var(--text-black-900);
+  color: #cdc4b5;
   padding: 5px 15px;
 }
 
 .aside .nav li a.active {
-  color: #002c39;
-  border-bottom: 4px solid #002c39;
+  color: #cdc4b5;
+  border-bottom: 4px solid #cdc4b5;
 }
 .aside .nav li a i {
   margin-right: 15px;
@@ -131,14 +131,16 @@
 
 @media (max-width: 1199px) {
   .aside {
-    width: 270px;
-    background: var(--bg-black-100);
+    width: 100%;
+    background: #203929
+      url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
+      repeat 0 0;
     position: fixed;
     top: 0;
-    left: -270px;
+    left: -100%;
     padding: 30px;
     height: 100vh;
-    border-right: 1px solid var(--bg-black-50);
+    /* border-right: 1px solid var(--bg-black-50); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +155,11 @@
     left: 30px;
   }
   .aside .nav-toggler.open {
-    left: 220px;
+    left: calc(100% - 60px);
     border: none;
+  }
+  .aside .nav-toggler.open span::before,
+  .aside .nav-toggler.open span::after {
+    background-color: #cdc4b5;
   }
 }

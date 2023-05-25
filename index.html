@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style/common.css" />
     <link rel="stylesheet" href="./style/about.css" />
     <link rel="stylesheet" href="./style/aside.css" />
+    <link rel="stylesheet" href="./style/stack.css" />
     <link rel="stylesheet" href="./style/contact.css" />
     <link rel="stylesheet" href="./style/main.css" />
     <link
@@ -23,7 +24,7 @@
       src="https://kit.fontawesome.com/9173af44c0.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/slick.min.js"></script>
+    <script src="./js/scroll.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -41,7 +42,9 @@
           <li>
             <a href="#about"><i class="fa fa-user"></i> About</a>
           </li>
-          <!-- <li><a href="#services"><i class="fa fa-list"></i> Services</a></li> -->
+          <li>
+            <a href="#stack"><i class="fa fa-list"></i> Stack</a>
+          </li>
           <li>
             <a href="#portfolio"><i class="fa fa-briefcase"></i> Portfoilo</a>
           </li>
@@ -51,8 +54,8 @@
         </ul>
       </div>
 
-      <div class="topNav">
-        <div class="nav-toggler">
+      <!-- <div class="topNav">
+        <div class="">
           <span></span>
         </div>
         <ul class="nav">
@@ -61,7 +64,7 @@
           <li><a href="#portfolio">Portfoilo</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
+      </div> -->
       <!-- ===== Aside End ===== -->
 
       <!-- ===== Main Content Start ===== -->
@@ -249,7 +252,7 @@
         <!-- ===== About Section End ===== -->
 
         <!-- ===== Stack Section Start ===== -->
-        <section class="portfolioPCver portfolio section" id="portfolio">
+        <section class="stack section" id="stack">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -261,35 +264,145 @@
                 <div class="">
                   <div class="">
                     <!-- ===== Timeline iTem Start ===== -->
-                    <div class="">
-                      <div class=""></div>
-                      <h4 class="">백엔드 개발</h4>
-                      <p class="">PHP, Node.js<br /></p>
+                    <div class="stackBoxWrap">
+                      <div class="stackBox">
+                        <h4 class="">백엔드 개발</h4>
+                        <div class="innerBoxWrap">
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/node.png" alt="" />
+                            </div>
+                            <p>Node.js</p>
+                          </div>
+
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/express.png" alt="" />
+                            </div>
+                            <p>Express</p>
+                          </div>
+
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/php.png" alt="" />
+                            </div>
+                            <p>PHP</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="stackBox">
+                        <h4 class="">데이터베이스</h4>
+                        <div class="innerBoxWrap">
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/mysql.png" alt="" />
+                            </div>
+                            <p>MySQL</p>
+                          </div>
+
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/mongodb.png" alt="" />
+                            </div>
+                            <p>MongoDB</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="stackBox">
+                        <h4 class="">프론트엔드 개발</h4>
+                        <div class="innerBoxWrap">
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <div class="innerImgBox">
+                                <img src="./images/react.png" alt="" />
+                              </div>
+                            </div>
+                            <p>React</p>
+                          </div>
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <div class="innerImgBox">
+                                <img src="./images/js.png" alt="" />
+                              </div>
+                            </div>
+                            <p>JavaScript</p>
+                          </div>
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/jquery.png" alt="" />
+                            </div>
+                            <p>jQuery</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="stackBox">
+                        <h4 class="">웹 퍼블리싱</h4>
+                        <div class="innerBoxWrap">
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/html5.png" alt="" />
+                            </div>
+                            <p>HTML5</p>
+                          </div>
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <div class="innerImgBox">
+                                <img src="./images/css3.png" alt="" />
+                              </div>
+                            </div>
+                            <p>CSS3</p>
+                          </div>
+
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/js.png" alt="" />
+                            </div>
+                            <p>JavaScript</p>
+                          </div>
+
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/jquery.png" alt="" />
+                            </div>
+                            <p>jQuery</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stackBox">
+                        <h4 class="">UI/UX 디자인</h4>
+                        <div class="innerBoxWrap">
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/photoshop.png" alt="" />
+                            </div>
+                            <p>Adobe Photoshop</p>
+                          </div>
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/illustrator.png" alt="" />
+                            </div>
+                            <p>Adobe Illustrator</p>
+                          </div>
+
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/xd.png" alt="" />
+                            </div>
+                            <p>AdobeXD</p>
+                          </div>
+
+                          <div class="innerBox">
+                            <div class="imgBox">
+                              <img src="./images/figma.png" alt="" />
+                            </div>
+                            <p>Figma</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <!-- ===== Timeline iTem End ===== -->
-                    <!-- ===== Timeline iTem Start ===== -->
-                    <div class="">
-                      <div class=""></div>
-                      <h4 class="">프론트엔드 개발</h4>
-                      <p class="">JavaScript, jQuery, React<br /></p>
-                    </div>
-                    <!-- ===== Timeline iTem End ===== -->
-                    <!-- ===== Timeline iTem Start ===== -->
-                    <div class="">
-                      <div class=""></div>
-                      <h4 class="">웹 퍼블리싱</h4>
-                      <p class="">HTML5, CSS3, JavaScript, jQuery<br /></p>
-                    </div>
-                    <!-- ===== Timeline iTem End ===== -->
-                    <!-- ===== Timeline iTem Start ===== -->
-                    <div class="">
-                      <div class=""></div>
-                      <h4 class="">UI/UX 디자인</h4>
-                      <p class="">
-                        Adobe Photoshop, Adobe Illustrator, AdobeXD, Figma<br />
-                      </p>
-                    </div>
-                    <!-- ===== Timeline iTem End ===== -->
                   </div>
                 </div>
               </div>
@@ -592,17 +705,17 @@
     <!-- ===== typed.js ===== -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- ===== mixitup ===== -->
-    <script src="./js/mixitup.min.js"></script>
+
     <!-- ===== EmailJS ===== -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
     <!-- ===== Custom JS ===== -->
-    <!-- <script src="./js/style-switcher.js"></script> -->
-    <script src="./js/main.js"></script>
+    <script src="./js/style-switcher.js" defer></script>
+    <script src="./js/main.js" defer></script>
 
-    <script src="./js/nav.js"></script>
+    <!-- <script src="./js/navOpen.js"></script> -->
 
     <script>
       const swiper = new Swiper(".swiper", {

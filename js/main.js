@@ -81,9 +81,11 @@ function updateNav(element) {
 // Nav Toggler Button
 const navTogglerBtn = document.querySelector(".nav-toggler"),
   aside = document.querySelector(".aside");
+
 navTogglerBtn.addEventListener("click", () => {
-  if (styleSwitcher.classList.contains("open")) {
-    styleSwitcher.classList.remove("open");
+  if (navTogglerBtn.classList.contains("open")) {
+    navTogglerBtn.classList.remove("open");
+    console.log("...");
   }
   asideSectionTogglerBtn();
 });
@@ -96,18 +98,16 @@ function asideSectionTogglerBtn() {
   }
 }
 
-//
-
 /* ===== MIXITUP FILTER PORTFOLIO ===== */
 
-let mixer = mixitup(".portfolio__container", {
-  selectors: {
-    target: ".portfolio__card",
-  },
-  animation: {
-    duration: 300,
-  },
-});
+// let mixer = mixitup(".portfolio__container", {
+//   selectors: {
+//     target: ".portfolio__card",
+//   },
+//   animation: {
+//     duration: 300,
+//   },
+// });
 
 /* ===== Link Active Portfolio ===== */
 

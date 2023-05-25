@@ -1,6 +1,6 @@
 /* ===== Portfolio Section ===== */
 .portfolio {
-  background: #cdc4b5ad
+  background: #203929
     url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
     repeat 0 0;
   background-repeat: repeat;
@@ -8,13 +8,26 @@
   opacity: 1;
 }
 
+.portfolio .section-title h2 {
+  color: #cdc4b5;
+}
+
+.portfolio .section-title h2:before {
+  background-color: #cdc4b5;
+}
+
 .portfolio .container {
-  color: #002c39;
+  color: #cdc4b5;
 }
 
 .portfolio__container {
   position: relative;
-  background-color: #fff;
+  background: #efebe6
+    url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
+    repeat 0 0;
+  background-repeat: repeat;
+  animation: 1000ms infinite noise;
+  opacity: 1;
   border: 1px solid var(--bg-black-50);
   width: 580px;
   border-radius: 0.5rem;
@@ -82,6 +95,11 @@
   display: none;
 }
 
+.details__info a,
+.details__info a:visited {
+  color: #002c39;
+}
+
 /* Active Item Portfolio */
 .active-portfolio {
   background-color: #002c39;
@@ -94,7 +112,7 @@
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  color: #002c39;
+  color: #cdc4b5;
 }
 
 @media (max-width: 1199px) {
