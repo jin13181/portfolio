@@ -4,6 +4,7 @@
   height: 80px;
   width: 100%;
   background-color: transparent;
+  z-index: 9;
 }
 
 .topNav .nav {

@@ -67,7 +67,7 @@
   height: 2px;
   width: 18px;
   /* background: #002c39; */
-  background-color: #002c39;
+  background-color: #203929;
   display: inline-block;
   position: relative;
 }
@@ -80,7 +80,7 @@
   height: 2px;
   width: 18px;
   /* background: #002c39; */
-  background-color: #002c39;
+  background-color: #203929;
   position: absolute;
   top: -6px;
   left: 0;
@@ -94,7 +94,7 @@
   height: 2px;
   width: 18px;
   /* background: #002c39; */
-  background-color: #002c39;
+  background-color: #203929;
   position: absolute;
   top: 6px;
   left: 0;
@@ -135,6 +135,7 @@
     background: #203929
       url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
       repeat 0 0;
+    animation: 1000ms infinite noise;
     position: fixed;
     top: 0;
     left: -100%;

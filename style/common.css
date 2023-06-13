@@ -18,7 +18,7 @@
   --bg-black-100: #fdf9ff; */
   --bg-black-50: #e8dfec;
   --text-black-900: #203929;
-  --text-black-700: #002c39;
+  --text-black-700: #203929;
 
   /* --text-black-700: #e36414; */
 }
@@ -55,11 +55,11 @@ ul {
   list-style-type: none;
 }
 p {
-  color: #002c39;
+  color: #203929;
 }
 section {
-  background: #cdc4b5ad
-    url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
+  /* background: #cdc4b5ad */
+  background: url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
     repeat 0 0;
   background-repeat: repeat;
   animation: 1000ms infinite noise;
@@ -124,7 +124,7 @@ section {
   content: "";
   height: 4px;
   width: 50px;
-  background-color: #002c39;
+  background-color: #203929;
   position: absolute;
   top: 100%;
   left: 0;

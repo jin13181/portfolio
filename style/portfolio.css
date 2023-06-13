@@ -77,7 +77,7 @@
 }
 
 .portfolio__button {
-  color: #002c39;
+  color: #203929;
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -97,12 +97,12 @@
 
 .details__info a,
 .details__info a:visited {
-  color: #002c39;
+  color: #203929;
 }
 
 /* Active Item Portfolio */
 .active-portfolio {
-  background-color: #002c39;
+  background-color: #203929;
   color: #fff;
 }
 

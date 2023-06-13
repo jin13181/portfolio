@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@200;300;400;500;600&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@200;300;400;500;600&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic:wght@400;700;800&display=swap");
 * {
-  font-family: 'Kosugi Maru', sans-serif;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Kosugi Maru", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Poppins", sans-serif;
   user-select: none;
 }
 
@@ -14,7 +14,7 @@
   /* --bg-black-900: #f2f2fc;
   --bg-black-100: #fdf9ff; */
   --bg-black-50: #e8dfec;
-  --text-black-900: #002c39;
+  --text-black-900: #203929;
   --text-black-700: #e36414;
 }
 
@@ -29,10 +29,10 @@ body.dark {
 body {
   line-height: 1.5;
   font-size: 16px;
-  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
 }
 
-* { 
+* {
   margin: 0;
   padding: 0;
   outline: none;
@@ -41,7 +41,8 @@ body {
   word-break: keep-all;
 }
 
-::before, ::after {
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -106,7 +107,7 @@ ul {
 }
 
 .section-title {
-  flex : 0 0 100%;
+  flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 60px;
 }
@@ -115,11 +116,11 @@ ul {
   font-size: 35px;
   color: var(--text-black-900);
   font-weight: 700;
-  position:relative;
+  position: relative;
 }
 
 .section-title h2:before {
-  content: '';
+  content: "";
   height: 4px;
   width: 50px;
   background-color: var(--skin-color);
@@ -155,7 +156,7 @@ ul {
   border-radius: 40px;
   display: inline-block;
   white-space: nowrap;
-  border: none;  
+  border: none;
   background: var(--skin-color);
   transition: all 0.3s ease;
 }
@@ -172,34 +173,32 @@ ul {
   font-family: "BiCute Round";
   font-style: normal;
   font-weight: 400;
-  src: local("※"), 
-  url(../font/TmoneyRoundWindRegular.woff2) format("woff2"), 
-  url(../font/TmoneyRoundWindRegular.woff) format("woff"), 
-  url(../font/TmoneyRoundWindRegular.ttf) format("fft"); 
-  font-display: swap
+  src: local("※"), url(../font/TmoneyRoundWindRegular.woff2) format("woff2"),
+    url(../font/TmoneyRoundWindRegular.woff) format("woff"),
+    url(../font/TmoneyRoundWindRegular.ttf) format("fft");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "BiCute Round";
   font-style: normal;
   font-weight: 700;
-  src: local("※"), 
-  url(../font/TmoneyRoundWind-ExtraBoldA1.woff2) format("woff2"), 
-  url(../font/TmoneyRoundWind-ExtraBoldA1.woff) format("woff"), 
-  url(../font/TmoneyRoundWind-ExtraBoldA1.ttf) format("fft"); 
-  font-display: swap
+  src: local("※"),
+    url(../font/TmoneyRoundWind-ExtraBoldA1.woff2) format("woff2"),
+    url(../font/TmoneyRoundWind-ExtraBoldA1.woff) format("woff"),
+    url(../font/TmoneyRoundWind-ExtraBoldA1.ttf) format("fft");
+  font-display: swap;
 }
 
 @media (max-width: 1199px) {
   .section .container {
     padding-top: 70px;
   }
-  
+
   .section {
     left: 0;
   }
   /* .section.open {
     left: 270px;
   } */
-  
 }

@@ -32,8 +32,17 @@
       src="https://kit.fontawesome.com/9173af44c0.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/jquery-3.6.1.js"></script>
     <script src="./js/scroll.js"></script>
     <title>Portfolio</title>
+    <style>
+      .color-green {
+        background-color: #7a4eab;
+      }
+      .color-beige {
+        background-color: #4332cf;
+      }
+    </style>
   </head>
   <body>
     <!-- ===== Main Container Start ===== -->
@@ -62,7 +71,7 @@
         </ul>
       </div>
 
-      <!-- <div class="topNav">
+      <div class="topNav">
         <div class="">
           <span></span>
         </div>
@@ -72,13 +81,13 @@
           <li><a href="#portfolio">Portfoilo</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div> -->
+      </div>
       <!-- ===== Aside End ===== -->
 
       <!-- ===== Main Content Start ===== -->
       <div class="main-content">
         <!-- ===== About Section Start ===== -->
-        <section class="main section active" id="home">
+        <section class="main section active color" id="home" data-color="green">
           <div class="container titleContainer">
             <div class="title">
               <h3 data-scroll data-scroll-speed="1">Hello, I'm YeonJin</h3>
@@ -87,7 +96,7 @@
             <a href="#about"><span></span>Scroll</a>
           </div>
         </section>
-        <section class="about section" id="about">
+        <section class="about section color" id="about" data-color="beige">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -136,7 +145,7 @@
                       <div></div>
                     </div>
                   </div>
-                  <div class="buttons padd-15">
+                  <div class="buttons padd-15 color" data-color="green">
                     <a href="./pages/cv.html" class="btn">웹에서 이력서 보기</a>
                   </div>
                 </div>
@@ -260,7 +269,7 @@
         <!-- ===== About Section End ===== -->
 
         <!-- ===== Stack Section Start ===== -->
-        <section class="stack section" id="stack">
+        <section class="stack section color" id="stack" data-color="beige">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -720,7 +729,6 @@
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
     <!-- ===== Custom JS ===== -->
-    <script src="./js/style-switcher.js" defer></script>
     <script src="./js/main.js" defer></script>
 
     <!-- <script src="./js/navOpen.js"></script> -->
