@@ -33,7 +33,6 @@
   border-radius: 0.5rem;
   padding: 2.5rem;
   color: var(--text-black-700);
-  max-height: 100vh;
   margin: auto;
 }
 
@@ -61,7 +60,6 @@
   border-radius: 0.5rem;
   margin-bottom: 1em;
   width: 100%;
-  margin: 30px auto;
 }
 
 .portfolio__subtitle {
