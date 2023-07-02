@@ -11,7 +11,8 @@
 }
 
 .main .container .title {
-  color: #f0d2ac;
+  /* color: #f0d2ac; */
+  color: #cdc4b5;
   text-align: center;
   font-size: 40px;
 }
@@ -42,7 +43,8 @@
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  color: #f0d2ac;
+  /* color: #f0d2ac; */
+  color: #cdc4b5;
   /* font : normal 400 20px/1 'Josefin Sans', sans-serif;
      */
   font: normal 400 14px/1 "Poppins", sans-serif;
