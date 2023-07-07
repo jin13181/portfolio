@@ -270,409 +270,487 @@
 
         <!-- ===== Portfolio Section  Start ===== -->
         <!-- portfolio container Start -->
-        <section class="portfolioPCver portfolio section" id="portfolio">
+        <section class="portfolio section" id="project">
+          <!-- portfolio container Start -->
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
-                <h2>Protfolio</h2>
+                <h2>Portfolio</h2>
               </div>
             </div>
+            <!-- portfolio Item Filter Start -->
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <div class="portfolio__filters">
+                  <span
+                    class="portfolio__item active-portfolio"
+                    data-filter="all"
+                    >모두보기</span
+                  >
+                  <span class="portfolio__item" data-filter=".Solo"
+                    >개인작업</span
+                  >
+                  <span class="portfolio__item" data-filter=".Team"
+                    >팀프로젝트</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- portfolio Item Filter End -->
 
             <!-- portfolio Item Container Start -->
-            <div class="swiper">
-              <div class="swiper-pagination"></div>
-              <!-- portfolio Item1 Start -->
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="portfolio__container portfolio__card">
-                    <div class="portfolioInner">
-                      <img
-                        src="./images/DANDI.png"
-                        alt="프로젝트1 단디"
-                        class="portfolio__img"
-                      />
-                      <div class="portfolioTxt">
-                        <p class="portfolio__subtitle">Team Project</p>
-                        <h3 class="portfolio__title">GPS인증 하이브리드 앱</h3>
-
-                        <p class="details__description">
-                          Open API을 활용한 GPS 인증 하이브리드 앱 개발<br /><br />
-                          대구 각 관광명소를 배경으로 돌아보며 QR코드를 스캔하여
-                          스탬프를 모으면서 대구 관광명소를 알리고, 추가적인
-                          지역발전을 도모하는 목표로 기획
-                        </p>
-                        <br />
-                      </div>
-                    </div>
-
-                    <ul class="details__info portfolioDetail">
-                      <li>
-                        <b>제작 기간</b>
-                        <p>2023.02.01. ~ 2023.02.28.</p>
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>사용기술</b>
-                        <p>HTML, CSS, JavaScript, React, node.js, Rest API</p>
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>역할</b>
-                        <p>웹 퍼블리싱, 프론트엔드 개발, 백엔드 개발</p>
-                        <br />
-                      </li>
-
-                      <li>
-                        • React Hook을 이용한 상태관리<br />
-                        • Netlify를 이용한 React 프로젝트 배포<br />
-                        • 로그인, 회원가입 기능 구현<br />
-                        • Node.js(Express)를 활용하여 애플리케이션 서버 구축<br />
-                        • Axios를 활용하여 서버와 통신<br />
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>링크</b>
-                        <p>
-                          <a href="./ppt/DANDI_ppt.html" target="_blank"
-                            >프로젝트 기획 보고서</a
-                          ><br />
-                          <a href="https://dandi21.netlify.app/" target="_blank"
-                            >프로젝트 사이트 주소</a
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- portfolio Item2 Start -->
-                <div class="swiper-slide">
-                  <div class="portfolio__container portfolio__card">
-                    <div class="portfolioInner">
-                      <img
-                        src="./images/coolstay.png"
-                        alt="프로젝트2 꿀스테이"
-                        class="portfolio__img"
-                      />
-                      <div class="portfolioTxt">
-                        <p class="portfolio__subtitle">Team Project</p>
-                        <h3 class="portfolio__title">
-                          Open API를 활용한 마케팅 목적의 랜딩페이지 제작
-                        </h3>
-
-                        <p class="details__description">
-                          카카오 알림톡 API를 이용한 마케팅 자동화 서비스
-                          프로젝트<br /><br />
-                          대상을 선정한 이유와 고객의 유입부터
-                          수익화(결제유도)까지의 흐름 등 모든것이 마케팅이
-                          중심이 되었던 프로젝트
-                        </p>
-                      </div>
-                    </div>
-
-                    <ul class="details__info portfolioDetail">
-                      <li>
-                        <b>재작 기간</b>
-                        <p>2023.01.04. ~ 2023.01.31.</p>
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>사용기술</b>
-                        <p>HTML, CSS, JavaScript, REST API</p>
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>역할</b>
-                        <p>프로젝트 기획 및 피드백 / 웹 퍼블리싱</p>
-                        <br />
-                      </li>
-
-                      <li>
-                        • 웹 표준, 웹 접근성을 고려한 반응형 웹 구현 <br />
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>수상</b>
-                        <p>
-                          영진전문대학 주최. Open API 활용 콘텐츠 개발 공모전
-                          은상 수상
-                        </p>
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>링크</b>
-                        <p>
-                          <a href="./ppt/COOLSTAY_ppt.html" target="_blank"
-                            >프로젝트 기획 보고서</a
-                          ><br />
-                          <a
-                            href="http://jin13181.ivyro.net/coolstay/"
-                            target="_blank"
-                            >프로젝트 사이트 주소</a
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- portfolio Item2 End -->
-
-                <!-- portfolio Item3 Start -->
-                <div class="swiper-slide">
-                  <div class="portfolio__container portfolio__card">
-                    <div class="portfolioInner">
-                      <img
-                        src="./images/DEBEC.png"
-                        alt="프로젝트3 대구백화점 홈페이지 리뉴얼"
-                        class="portfolio__img"
-                      />
-                      <div class="portfolioTxt">
-                        <p class="portfolio__subtitle">Team Project</p>
-                        <h3 class="portfolio__title">
-                          Open API를 활용한 SNS 연동 회원관리 시스템
-                        </h3>
-
-                        <p class="details__description">
-                          대구에 위치한 [대구백화점]을 대상으로 Open API를
-                          이용한 SNS 연동 회원관리 시스템 프로젝트
-                        </p>
-                      </div>
-                    </div>
-
-                    <ul class="details__info portfolioDetail">
-                      <li>
-                        <b>제작 기간</b>
-                        <p>2022.11.17. ~ 2022.12.16.</p>
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>사용기술</b>
-                        <p>
-                          HTML, CSS, JavaScript, jQuery, PHP, MySQL, REST API
-                        </p>
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>역할</b>
-                        <p>웹 퍼블리싱, 프론트엔드 개발, 백엔드 개발</p>
-                        <br />
-                      </li>
-
-                      <li>
-                        • 웹 표준, 웹 접근성을 고려한 반응형 웹 구현 <br />
-                        • PHP와 REST API를 활용하여 소셜 로그인 기능 구현<br />
-                        • 인스타그램 Open API를 이용해서 SNS 게시물 연동 기능
-                        구현<br />
-                        • 관리자 페이지로 회원 정보 수정 및 삭제 구현 <br />
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>수상</b>
-                        <p>
-                          송암재단 주최. 송암재단 제 11회 송암전 최우수상 수상
-                        </p>
-                        <br />
-                      </li>
-
-                      <li>
-                        <b>링크</b>
-                        <p>
-                          <a href="./ppt/DEBEC_ppt.html" target="_blank"
-                            >프로젝트 기획 보고서</a
-                          ><br />
-                          <a
-                            href="http://jin13181.ivyro.net/debec/"
-                            target="_blank"
-                            >프로젝트 사이트 주소</a
-                          >
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- portfolio Item3 End -->
+            <div class="portfolio__container">
+              <!-- portfolio Item Start -->
+              <div class="portfolio__card mix Team">
+                <img
+                  src="./images/DANDI.png"
+                  alt="포트폴리오1"
+                  class="portfolio__img"
+                />
+                <p class="portfolio__subtitle">Team Project</p>
+                <h3 class="portfolio__title">GPS인증 하이브리드 앱</h3>
+                <p class="portfolio__link">
+                  <a href="./ppt/DANDI.html" target="_blank">기획 보고서</a
+                  ><br />
+                  <a href="https://dandi21.netlify.app/" target="_blank"
+                    >사이트 주소</a
+                  >
+                </p>
+                <span class="portfolio__button"
+                  >더보기
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+                <div class="portfolio__item-details">
+                  <p class="details__description">
+                    Open API을 활용한 GPS 인증 하이브리드 앱 개발<br /><br />
+                    대구 각 관광명소를 배경으로 돌아보며 QR코드를 스캔하여
+                    스탬프를 모으면서 대구 관광명소를 알리고, 추가적인
+                    지역발전을 도모하는 목표로 기획
+                  </p>
+                  <ul class="details__info">
+                    <b>제작 기간</b>
+                    -
+                    <span>2023.02.01. ~ 2023.02.28.</span>
+                    <br />
+                    <li>
+                      <b>사용기술</b> -
+                      <span
+                        >HTML, CSS, JavaScript, React, node.js, Rest API</span
+                      >
+                      <br />
+                    </li>
+                    <li>
+                      <b>역할</b> -
+                      <span>웹 퍼블리싱, 프론트엔드 개발, 백엔드 개발</span>
+                      <br />
+                    </li>
+                    <li>
+                      • React 환경에서 퍼블리싱<br />
+                      • React Hook을 이용한 상태관리<br />
+                      • Netlify를 이용한 React 프로젝트 배포<br />
+                      • 로그인, 회원가입 기능 구현<br />
+                      • Node.js(Express)를 활용하여 애플리케이션 서버 구축<br />
+                      • Axios를 활용하여 서버와 통신<br />
+                      <br />
+                    </li>
+                    <li>
+                      <b>링크</b>
+                      <p>
+                        <a href="./ppt/DANDI_ppt.html" target="_blank"
+                          >프로젝트 기획 보고서 추후 업데이트 예정</a
+                        ><br />
+                        <a href="https://dandi21.netlify.app/" target="_blank"
+                          >프로젝트 사이트 주소</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <!-- portfolio Item1 End -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <!-- portfolio Item End -->
+              <!-- portfolio Item Start -->
+              <div class="portfolio__card mix Team">
+                <img
+                  src="./images/coolstay.png"
+                  alt="포트폴리오2"
+                  class="portfolio__img"
+                />
+                <p class="portfolio__subtitle">Team Project</p>
+                <h3 class="portfolio__title">
+                  Open API를 활용한 마케팅 목적의 랜딩페이지 제작
+                </h3>
+
+                <p class="portfolio__link">
+                  <a href="./ppt/COOLSTAY.html" target="_blank">기획 보고서</a
+                  ><br />
+                  <a href="http://jin13181.ivyro.net/coolstay/" target="_blank"
+                    >사이트 주소</a
+                  >
+                </p>
+                <div class="portfolio__button">
+                  더보기
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="portfolio__item-details">
+                  <p class="details__description">
+                    카카오 알림톡 API를 이용한 마케팅 자동화 서비스 프로젝트<br /><br />
+                    대상을 선정한 이유와 고객의 유입부터 수익화(결제유도)까지의
+                    흐름 등 모든것이 마케팅이 중심이 되었던 프로젝트
+                  </p>
+                  <ul class="details__info">
+                    <b>재작 기간</b>
+                    -
+                    <span>2023.01.04. ~ 2023.01.31.</span>
+                    <br />
+                    <li>
+                      <b>사용기술</b> -
+                      <span>HTML, CSS, JavaScript, REST API</span>
+                      <br />
+                    </li>
+                    <li>
+                      <b>역할</b> -
+                      <span>전반적인 화면 설계 및 웹 퍼블리싱</span>
+                      <br />
+                    </li>
+                    <li>
+                      • 웹 표준, 웹 접근성을 고려한 반응형 웹 구현 <br />
+                      <br />
+                    </li>
+
+                    <li>
+                      <b>링크</b>
+                      <p>
+                        <a href="./ppt/COOLSTAY.html" target="_blank"
+                          >프로젝트 기획 보고서</a
+                        ><br />
+                        <a
+                          href="http://jin13181.ivyro.net/coolstay/"
+                          target="_blank"
+                          >프로젝트 사이트 주소</a
+                        >
+                      </p>
+                    </li>
+                    <li>
+                      <b>수상</b> -
+                      <span>
+                        영진전문대학 주최. Open API 활용 콘텐츠 개발 공모전 은상
+                        수상
+                      </span>
+                      <br />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- portfolio Item End -->
+              <!-- portfolio Item Start -->
+              <div class="portfolio__card mix Team">
+                <img
+                  src="./images/DEBEC.png"
+                  alt="포트폴리오3"
+                  class="portfolio__img"
+                />
+                <p class="portfolio__subtitle">Team Project</p>
+                <h3 class="portfolio__title">
+                  Open API를 활용한 SNS 연동 회원관리 시스템
+                </h3>
+                <p class="portfolio__link">
+                  <a href="./ppt/DEBEC.html" target="_blank">기획 보고서</a
+                  ><br />
+                  <a href="http://jin13181.ivyro.net/debec/" target="_blank"
+                    >사이트 주소</a
+                  >
+                </p>
+                <span class="portfolio__button"
+                  >더보기
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+                <div class="portfolio__item-details">
+                  <!-- <h3 class="details__title">Image Search App</h3> -->
+                  <p class="details__description">
+                    대구에 위치한 [대구백화점]을 대상으로 Open API를 이용한 SNS
+                    연동 회원관리 시스템 프로젝트
+                  </p>
+                  <ul class="details__info">
+                    <li>
+                      <b>제작 기간</b> -
+                      <span>2022.11.17. ~ 2022.12.16.</span>
+                      <br />
+                    </li>
+                    <li>
+                      <b>사용기술</b> -
+                      <span
+                        >HTML, CSS, JavaScript, jQuery, PHP, MySQL, REST
+                        API</span
+                      >
+                      <br />
+                    </li>
+                    <li>
+                      <b>역할</b> -
+                      <span>웹 퍼블리싱, 프론트엔드 개발, 백엔드 개발</span>
+                      <br />
+                    </li>
+
+                    <li>
+                      • 웹 표준, 웹 접근성을 고려한 반응형 웹 구현 <br />
+                      • PHP와 REST API를 활용하여 소셜 로그인 기능 구현<br />
+                      • 관리자 페이지로 회원 정보 수정 및 삭제 구현 <br />
+                      <br />
+                    </li>
+
+                    <li>
+                      <b>링크</b>
+                      <p>
+                        <a href="./ppt/DEBEC.html" target="_blank"
+                          >프로젝트 기획 보고서</a
+                        ><br />
+                        <a
+                          href="http://jin13181.ivyro.net/debec/"
+                          target="_blank"
+                          >프로젝트 사이트 주소</a
+                        >
+                      </p>
+                    </li>
+                    <li>
+                      <b>수상</b>
+                      <span
+                        >송암재단 주최. 송암재단 제 11회 송암전 최우수상
+                        수상</span
+                      >
+                      <br />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- portfolio Item End -->
+              <!-- portfolio Item Start -->
+              <div class="portfolio__card mix Solo">
+                <img
+                  src="./images/EatWell1.png"
+                  alt="포트폴리오4"
+                  class="portfolio__img"
+                />
+                <p class="portfolio__subtitle">Solo Project</p>
+                <h3 class="portfolio__title">급식 예약 어플 EatWell 제작</h3>
+                <span class="portfolio__button"
+                  >더보기
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+                <div class="portfolio__item-details">
+                  <!-- <h3 class="details__title">Image Search App</h3> -->
+                  <p class="details__description">급식 예약 어플 제작</p>
+                  <ul class="details__info">
+                    <li>
+                      <b>제작 기간</b> -
+                      <span></span>
+                      <br />
+                    </li>
+                    <li>
+                      <b>사용기술</b> -
+                      <span>Adobe XD</span>
+                      <br />
+                    </li>
+                    <li>
+                      <b>역할</b> -
+                      <span>기획 및 UI/UX 디자인</span>
+                      <br />
+                    </li>
+                    <li>
+                      <b>링크</b>
+                      <p>
+                        <a href="./ppt/DEBEC_ppt.html" target="_blank"
+                          >프로젝트 보고서 추후 업데이트 예정</a
+                        ><br />
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- portfolio Item End -->
             </div>
+            <!-- portfolio Item Container Start -->
+
+            <!-- Portfolio Popup Start -->
+            <div class="portfolio__popup">
+              <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                  <div class="portfolio__popup-close">
+                    <span></span>
+                  </div>
+                  <div class="pp__thumbnail">
+                    <img
+                      src="https://source.unsplash.com/collection/17"
+                      alt="포트폴리오썸네일"
+                      class="portfolio__pop-img"
+                    />
+                  </div>
+                  <div class="portfolio__popup-info">
+                    <div class="portfolio__popup-subtitle">
+                      <span>Sample Subtitle</span>
+                    </div>
+                    <h3 class="portfolio__popup-title">Sample Details Title</h3>
+                    <div class="portfolio__popup-body">
+                      <p class="details__description">
+                        Sample Details Description
+                      </p>
+                      <ul class="details__info">
+                        <li>제작 - <span>4 Dec 2020</span></li>
+                        <li>사용 - <span>HTML CSS</span></li>
+                        <li>구분 - <span>Frontend</span></li>
+                        <li>
+                          데모 - <span><a href="#">www.domain.com</a></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Popup End -->
           </div>
         </section>
         <!-- ===== Portfolio Section End ===== -->
-        <!-- ===== Stack Section Start ===== -->
-        <section class="stack section color" id="stack" data-color="beige">
+
+        <!--------------------------스택-->
+        <section class="section" id="skills">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
-                <h2>Stack</h2>
+                <h2>Skills</h2>
               </div>
             </div>
-            <div class="skills">
-              <div class="">
-                <div class="">
-                  <div class="">
-                    <!-- ===== Timeline iTem Start ===== -->
-                    <div class="stackBoxWrap">
-                      <div class="stackBox">
-                        <h4 class="">백엔드 개발</h4>
-                        <div class="innerBoxWrap">
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/node.png" alt="Node.js" />
-                            </div>
-                            <p>Node.js</p>
-                          </div>
-
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/express.png" alt="Express" />
-                            </div>
-                            <p>Express</p>
-                          </div>
-
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/php.png" alt="PHP" />
-                            </div>
-                            <p>PHP</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="stackBox">
-                        <h4 class="">데이터베이스</h4>
-                        <div class="innerBoxWrap">
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/mysql.png" alt="MySQL" />
-                            </div>
-                            <p>MySQL</p>
-                          </div>
-
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/mongodb.png" alt="MongoDB" />
-                            </div>
-                            <p>MongoDB</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="stackBox">
-                        <h4 class="">프론트엔드 개발</h4>
-                        <div class="innerBoxWrap">
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <div class="innerImgBox">
-                                <img src="./images/react.png" alt="React" />
-                              </div>
-                            </div>
-                            <p>React</p>
-                          </div>
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <div class="innerImgBox">
-                                <img src="./images/js.png" alt="JavaScript" />
-                              </div>
-                            </div>
-                            <p>JavaScript</p>
-                          </div>
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/jquery.png" alt="jQuery" />
-                            </div>
-                            <p>jQuery</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="stackBox">
-                        <h4 class="">웹 퍼블리싱</h4>
-                        <div class="innerBoxWrap">
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/html5.png" alt="HTML5" />
-                            </div>
-                            <p>HTML5</p>
-                          </div>
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <div class="innerImgBox">
-                                <img src="./images/css3.png" alt="CSS3" />
-                              </div>
-                            </div>
-                            <p>CSS3</p>
-                          </div>
-
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/js.png" alt="JavaScript" />
-                            </div>
-                            <p>JavaScript</p>
-                          </div>
-
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/jquery.png" alt="jQuery" />
-                            </div>
-                            <p>jQuery</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="stackBox">
-                        <h4 class="">UI/UX 디자인</h4>
-                        <div class="innerBoxWrap">
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img
-                                src="./images/photoshop.png"
-                                alt="Photoshop"
-                              />
-                            </div>
-                            <p>Adobe Photoshop</p>
-                          </div>
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img
-                                src="./images/illustrator.png"
-                                alt="Illustrator"
-                              />
-                            </div>
-                            <p>Adobe Illustrator</p>
-                          </div>
-
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/xd.png" alt="" />
-                            </div>
-                            <p>AdobeXD</p>
-                          </div>
-
-                          <div class="innerBox">
-                            <div class="imgBox">
-                              <img src="./images/figma.png" alt="Figma" />
-                            </div>
-                            <p>Figma</p>
-                          </div>
-                        </div>
-                      </div>
+            <div class="introBox">
+              <div
+                class="textInBox"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                <p class="fontbold">UI/UX디자인</p>
+                <div class="stackWrap">
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img
+                        src="./images/photoshop.png"
+                        width="50px"
+                        alt="포토샵"
+                      />
                     </div>
+                    <div class="stackTxt">photoshop</div>
+                    <div class="stackBlank"></div>
+                  </div>
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img src="./images/xd.png" width="50px" alt="어도비xd" />
+                    </div>
+                    <div class="stackTxt">AdobeXD</div>
+                    <div class="stackBlank"></div>
+                  </div>
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img
+                        src="./images/illustrator.png"
+                        width="50px"
+                        alt="일러스트레이터"
+                      />
+                    </div>
+                    <div class="stackTxt">Illustrator</div>
+                    <div class="stackBlank"></div>
+                  </div>
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img src="./images/figma.png" width="50px" alt="피그마" />
+                    </div>
+                    <div class="stackTxt">Figma</div>
+                    <div class="stackBlank"></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="textInBox"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                <p class="fontbold">프론트엔드 개발</p>
+                <div class="stackWrap">
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img src="./images/html5.png" width="50px" alt="html" />
+                    </div>
+                    <div class="stackTxt">HTML5</div>
+                    <div class="stackBlank"></div>
+                  </div>
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img src="./images/css3.png" width="50px" alt="css" />
+                    </div>
+                    <div class="stackTxt">CSS3</div>
+                    <div class="stackBlank"></div>
+                  </div>
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img
+                        src="./images/js.png"
+                        width="50px"
+                        alt="javaScript"
+                      />
+                    </div>
+                    <div class="stackTxt">JavaScipt</div>
+                    <div class="stackBlank"></div>
+                  </div>
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img
+                        src="./images/jquery.png"
+                        width="50px"
+                        alt="jQuery"
+                      />
+                    </div>
+                    <div class="stackTxt">jQuery</div>
+                    <div class="stackBlank"></div>
+                  </div>
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img src="./images/react.png" width="50px" alt="react" />
+                    </div>
+                    <div class="stackTxt">jQuery</div>
+                    <div class="stackBlank"></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="textInBox"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                <p class="fontbold">백엔드</p>
+
+                <div class="stackWrap">
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img src="./images/php.png" width="50px" alt="php" />
+                    </div>
+                    <div class="stackTxt">PHP</div>
+                    <div class="stackBlank"></div>
+                  </div>
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img src="./images/node.png" width="50px" alt="nodeJS" />
+                    </div>
+                    <div class="stackTxt">Node.js</div>
+                    <div class="stackBlank"></div>
+                  </div>
+
+                  <div class="stackContainer">
+                    <div class="stackImg">
+                      <img src="./images/express.png" width="50px" alt="php" />
+                    </div>
+                    <div class="stackTxt">PHP</div>
+                    <div class="stackBlank"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- ===== Stack Section End ===== -->
 
         <!-- ===== Contact Section Start ===== -->
         <section class="contact section" id="contact">
